@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCEBA3124002EC000AC62E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCEBA3024002EC000AC62E1 /* UIKit.framework */; };
+		1BCEBA3324002EC000AC62E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCEBA3224002EC000AC62E1 /* Foundation.framework */; };
+		1BCEBA3524002EC000AC62E1 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCEBA3424002EC000AC62E1 /* CydiaSubstrate.framework */; };
+		1BCEBA4424002EC000AC62E1 /* WatchDogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBA4324002EC000AC62E1 /* WatchDogger.mm */; };
+		1BCEBA4F2400356600AC62E1 /* RBSProcessIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCEBA4D2400356500AC62E1 /* RBSProcessIdentity.h */; };
+		1BCEBA502400356600AC62E1 /* RBProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCEBA4E2400356500AC62E1 /* RBProcess.h */; };
+		1BCEBA532400357400AC62E1 /* RBProcessHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBA512400357300AC62E1 /* RBProcessHook.m */; };
+		1BCEBA542400357400AC62E1 /* RBProcessHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCEBA522400357400AC62E1 /* RBProcessHook.h */; };
+		1BCEBA5724003F2A00AC62E1 /* NormalLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCEBA5524003F2900AC62E1 /* NormalLog.h */; };
+		1BCEBA5824003F2A00AC62E1 /* NormalLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBA5624003F2A00AC62E1 /* NormalLog.m */; };
+		1BCEBA5B2400403D00AC62E1 /* NSDateFormatter+ShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCEBA592400403D00AC62E1 /* NSDateFormatter+ShareInstance.m */; };
+		1BCEBA5C2400403D00AC62E1 /* NSDateFormatter+ShareInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCEBA5A2400403D00AC62E1 /* NSDateFormatter+ShareInstance.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BCEBA2D24002EC000AC62E1 /* WatchDogger.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WatchDogger.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCEBA3024002EC000AC62E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1BCEBA3224002EC000AC62E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BCEBA3424002EC000AC62E1 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		1BCEBA3924002EC000AC62E1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		1BCEBA3D24002EC000AC62E1 /* WatchDogger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WatchDogger.plist; sourceTree = "<group>"; };
+		1BCEBA3E24002EC000AC62E1 /* WatchDoggerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WatchDoggerIcon.png; sourceTree = "<group>"; };
+		1BCEBA3F24002EC000AC62E1 /* WatchDoggerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchDoggerIcon@2x.png"; sourceTree = "<group>"; };
+		1BCEBA4124002EC000AC62E1 /* WatchDogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WatchDogger-Prefix.pch"; path = "../WatchDogger-Prefix.pch"; sourceTree = "<group>"; };
+		1BCEBA4224002EC000AC62E1 /* WatchDogger.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = WatchDogger.xm; sourceTree = "<group>"; };
+		1BCEBA4324002EC000AC62E1 /* WatchDogger.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WatchDogger.mm; sourceTree = "<group>"; };
+		1BCEBA4724002EC000AC62E1 /* WatchDogger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WatchDogger.plist; sourceTree = "<group>"; };
+		1BCEBA4D2400356500AC62E1 /* RBSProcessIdentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBSProcessIdentity.h; sourceTree = "<group>"; };
+		1BCEBA4E2400356500AC62E1 /* RBProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBProcess.h; sourceTree = "<group>"; };
+		1BCEBA512400357300AC62E1 /* RBProcessHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBProcessHook.m; sourceTree = "<group>"; };
+		1BCEBA522400357400AC62E1 /* RBProcessHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBProcessHook.h; sourceTree = "<group>"; };
+		1BCEBA5524003F2900AC62E1 /* NormalLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLog.h; sourceTree = "<group>"; };
+		1BCEBA5624003F2A00AC62E1 /* NormalLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLog.m; sourceTree = "<group>"; };
+		1BCEBA592400403D00AC62E1 /* NSDateFormatter+ShareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ShareInstance.m"; sourceTree = "<group>"; };
+		1BCEBA5A2400403D00AC62E1 /* NSDateFormatter+ShareInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ShareInstance.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BCEBA2924002EC000AC62E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCEBA3124002EC000AC62E1 /* UIKit.framework in Frameworks */,
+				1BCEBA3324002EC000AC62E1 /* Foundation.framework in Frameworks */,
+				1BCEBA3524002EC000AC62E1 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BCEBA2224002EC000AC62E1 = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3624002EC000AC62E1 /* WatchDogger */,
+				1BCEBA2F24002EC000AC62E1 /* Frameworks */,
+				1BCEBA2E24002EC000AC62E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BCEBA2E24002EC000AC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA2D24002EC000AC62E1 /* WatchDogger.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BCEBA2F24002EC000AC62E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3024002EC000AC62E1 /* UIKit.framework */,
+				1BCEBA3224002EC000AC62E1 /* Foundation.framework */,
+				1BCEBA3424002EC000AC62E1 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BCEBA3624002EC000AC62E1 /* WatchDogger */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA4224002EC000AC62E1 /* WatchDogger.xm */,
+				1BCEBA4324002EC000AC62E1 /* WatchDogger.mm */,
+				1BCEBA4E2400356500AC62E1 /* RBProcess.h */,
+				1BCEBA4D2400356500AC62E1 /* RBSProcessIdentity.h */,
+				1BCEBA522400357400AC62E1 /* RBProcessHook.h */,
+				1BCEBA512400357300AC62E1 /* RBProcessHook.m */,
+				1BCEBA5524003F2900AC62E1 /* NormalLog.h */,
+				1BCEBA5624003F2A00AC62E1 /* NormalLog.m */,
+				1BCEBA5A2400403D00AC62E1 /* NSDateFormatter+ShareInstance.h */,
+				1BCEBA592400403D00AC62E1 /* NSDateFormatter+ShareInstance.m */,
+				1BCEBA3724002EC000AC62E1 /* Package */,
+				1BCEBA4024002EC000AC62E1 /* Supporting Files */,
+			);
+			path = WatchDogger;
+			sourceTree = "<group>";
+		};
+		1BCEBA3724002EC000AC62E1 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3824002EC000AC62E1 /* DEBIAN */,
+				1BCEBA3A24002EC000AC62E1 /* Library */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		1BCEBA3824002EC000AC62E1 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3924002EC000AC62E1 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		1BCEBA3A24002EC000AC62E1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3B24002EC000AC62E1 /* PreferenceLoader */,
+				1BCEBA4524002EC000AC62E1 /* MobileSubstrate */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1BCEBA3B24002EC000AC62E1 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3C24002EC000AC62E1 /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		1BCEBA3C24002EC000AC62E1 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA3D24002EC000AC62E1 /* WatchDogger.plist */,
+				1BCEBA3E24002EC000AC62E1 /* WatchDoggerIcon.png */,
+				1BCEBA3F24002EC000AC62E1 /* WatchDoggerIcon@2x.png */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		1BCEBA4024002EC000AC62E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA4124002EC000AC62E1 /* WatchDogger-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BCEBA4524002EC000AC62E1 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA4624002EC000AC62E1 /* DynamicLibraries */,
+			);
+			path = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		1BCEBA4624002EC000AC62E1 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				1BCEBA4724002EC000AC62E1 /* WatchDogger.plist */,
+			);
+			path = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BCEBA2A24002EC000AC62E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCEBA5C2400403D00AC62E1 /* NSDateFormatter+ShareInstance.h in Headers */,
+				1BCEBA5724003F2A00AC62E1 /* NormalLog.h in Headers */,
+				1BCEBA542400357400AC62E1 /* RBProcessHook.h in Headers */,
+				1BCEBA502400356600AC62E1 /* RBProcess.h in Headers */,
+				1BCEBA4F2400356600AC62E1 /* RBSProcessIdentity.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BCEBA2C24002EC000AC62E1 /* WatchDogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCEBA4A24002EC000AC62E1 /* Build configuration list for PBXNativeTarget "WatchDogger" */;
+			buildPhases = (
+				1BCEBA2724002EC000AC62E1 /* ShellScript */,
+				1BCEBA2824002EC000AC62E1 /* Sources */,
+				1BCEBA2924002EC000AC62E1 /* Frameworks */,
+				1BCEBA2A24002EC000AC62E1 /* Headers */,
+				1BCEBA2B24002EC000AC62E1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchDogger;
+			productName = WatchDogger;
+			productReference = 1BCEBA2D24002EC000AC62E1 /* WatchDogger.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BCEBA2324002EC000AC62E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					1BCEBA2C24002EC000AC62E1 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1BCEBA2624002EC000AC62E1 /* Build configuration list for PBXProject "WatchDogger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BCEBA2224002EC000AC62E1;
+			productRefGroup = 1BCEBA2E24002EC000AC62E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BCEBA2C24002EC000AC62E1 /* WatchDogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BCEBA2724002EC000AC62E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		1BCEBA2B24002EC000AC62E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BCEBA2824002EC000AC62E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCEBA5B2400403D00AC62E1 /* NSDateFormatter+ShareInstance.m in Sources */,
+				1BCEBA532400357400AC62E1 /* RBProcessHook.m in Sources */,
+				1BCEBA5824003F2A00AC62E1 /* NormalLog.m in Sources */,
+				1BCEBA4424002EC000AC62E1 /* WatchDogger.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BCEBA4824002EC000AC62E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"WatchDogger\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BCEBA4924002EC000AC62E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"WatchDogger\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1BCEBA4B24002EC000AC62E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH4YVD7HDL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WatchDogger/WatchDogger-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = Preferences;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e";
+			};
+			name = Release;
+		};
+		1BCEBA4C24002EC000AC62E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH4YVD7HDL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WatchDogger/WatchDogger-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = Preferences;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BCEBA2624002EC000AC62E1 /* Build configuration list for PBXProject "WatchDogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCEBA4824002EC000AC62E1 /* Release */,
+				1BCEBA4924002EC000AC62E1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCEBA4A24002EC000AC62E1 /* Build configuration list for PBXNativeTarget "WatchDogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCEBA4B24002EC000AC62E1 /* Release */,
+				1BCEBA4C24002EC000AC62E1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BCEBA2324002EC000AC62E1 /* Project object */;
+}

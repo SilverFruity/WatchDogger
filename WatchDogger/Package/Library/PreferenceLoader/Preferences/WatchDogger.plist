@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>WatchDoggerIcon.png</string>
+		<key>label</key>
+		<string>WatchDogger</string>
+	</dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Let&apos;s go</string>
+		</dict>
+		<dict>
+			<key>ALChangeNotification</key>
+			<string>com.silverfruity.watchdogger.settingschanged</string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+					<key>footer-title</key>
+					<string>Select which applications to load Reveal into.</string>
+					<key>items</key>
+					<array/>
+				</dict>
+				<dict>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>cell-class-name</key>
+					<string>ALSwitchCell</string>
+					<key>suppress-hidden-apps</key>
+					<true/>
+					<key>predicate</key>
+					<string>isSystemApplication = FALSE</string>
+					<key>title</key>
+					<string>User Applications</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>System Applications</string>
+					<key>icon-size</key>
+					<string>29</string>
+					<key>predicate</key>
+					<string>isSystemApplication = TRUE AND NOT (displayIdentifier IN {&apos;com.iptm.bigboss.sbsettings&apos;, &apos;com.booleanmagic.overboard&apos;, &apos;eu.heinelt.ifile&apos;})</string>
+					<key>suppress-hidden-apps</key>
+					<true/>
+					<key>cell-class-name</key>
+					<string>ALSwitchCell</string>
+				</dict>
+			</array>
+			<key>ALSettingsDefaultValue</key>
+			<string></string>
+			<key>ALSettingsKeyPrefix</key>
+			<string>WatchDoggerSuperEnabled-</string>
+			<key>ALAllowsSelection</key>
+			<true/>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.silverfruity.WatchDogger.plist</string>
+			<key>isController</key>
+			<true/>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Enabled Applications</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>You can run any app always in background and no count limist.   But it only for iOS 13 - iOS 13.3.1 .  Thank for using.</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>WatchDogger</string>
+</dict>
+</plist>
