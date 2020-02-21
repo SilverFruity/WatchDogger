@@ -28,7 +28,7 @@
 			<array>
 				<dict>
 					<key>footer-title</key>
-					<string>Select which applications to load Reveal into.</string>
+					<string>Select with applications to keep  running in background</string>
 					<key>items</key>
 					<array/>
 				</dict>
