@@ -1,8 +1,9 @@
 # WatchDogger
 ## Core
 
-核心方法
+**plist中添加 Executables -> runningboardd**
 
+**记得 killall runningboardd**
 ```objective-c
 // 请自行导入RBProcess.h RBSProcessIdentity.h，工程中已经包含
 %hook RBProcess
