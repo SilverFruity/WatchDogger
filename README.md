@@ -1,11 +1,11 @@
 # WatchDogger
 ## Core
 
-**plist中添加 Executables -> runningboardd**
+**Add 'Executables -> runningboardd' in plist**
 
-**记得 killall runningboardd**
+**remember 'killall runningboardd'**
 ```objective-c
-// 请自行导入RBProcess.h RBSProcessIdentity.h，工程中已经包含
+// please include RBProcess.h and RBSProcessIdentity.h. the project has inlcude those files.
 %hook RBProcess
 - (void)_lock_suspend{
   if ([self.identity.embeddedApplicationIdentifier isEqualToString:@"your bundleId"]) {
